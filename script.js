@@ -1,3 +1,13 @@
+/* ===============================
+   EmailJS Initialization
+================================= */
+
+(function () {
+    emailjs.init({
+        publicKey: "Exbg3ipmF0LrzJLuo",
+    });
+})();
+
 /* ==================================================
    AOS INITIALIZATION
 ================================================== */
@@ -774,3 +784,36 @@ function updateParticles(color){
         pJSDom[0].pJS.fn.particlesRefresh();
     }
 }
+/* ==================================================
+   CONTACT FORM (EMAILJS)
+================================================== */
+
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_sk2tzve",
+        "template_o9e2qby",
+        this
+    )
+
+    .then(() => {
+
+        alert("Message sent successfully!");
+
+        contactForm.reset();
+
+    })
+
+    .catch((error) => {
+
+        console.error("EmailJS Error:", error);
+
+        alert("Failed to send message.");
+
+    });
+
+});

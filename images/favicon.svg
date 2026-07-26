@@ -3,11 +3,10 @@
   <rect width="64" height="64" rx="12" fill="#faf2f2"/>
   <text x="50%" y="58%"
         text-anchor="middle"
-        fill="#ff3b30"
+        fill="#ff2600"
         font-size="26"
         font-family="Arial, sans-serif"
         font-weight="bold">
     GPS
   </text>
 </svg>
-
