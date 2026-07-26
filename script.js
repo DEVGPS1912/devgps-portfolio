@@ -787,10 +787,10 @@ function updateParticles(color){
 /* ==================================================
    CONTACT FORM (EMAILJS)
 ================================================== */
-
+/* ==================================================
 const contactForm = document.getElementById("contact-form");
 
-contactForm.addEventListener("submit", function (e) {
+    contactForm.addEventListener("submit", function (e) {
 
     e.preventDefault();
 
@@ -817,3 +817,4 @@ contactForm.addEventListener("submit", function (e) {
     });
 
 });
+================================================== */
